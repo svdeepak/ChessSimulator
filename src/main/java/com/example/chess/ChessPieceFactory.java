@@ -13,6 +13,8 @@ public class ChessPieceFactory {
                 return new King(position);
             case "queen":
                 return new Queen(position);
+            case "rook":
+                return new Rook(position);
 
             default:
                 throw new IllegalArgumentException("Invalid piece type: " + pieceType);
